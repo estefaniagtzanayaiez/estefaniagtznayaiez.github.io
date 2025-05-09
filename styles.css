@@ -1,0 +1,101 @@
+/* archivo styles.css */
+
+
+
+
+/*configuracion general del cuerpo de la pagina*/
+body{
+    font-family: Arial, Helvetica, sans-serif; /*fuente de texto*/
+margin: 0; /*elimina los margenes*/
+    padding: 0;/*elimina los rellenos*/
+    background:linear-gradient(to right, #ff7e5f, #feb47b); /*fondo con gradiente*/
+    color:#333; /* color del texto*/
+}
+
+/* estilos generales para las secciones principales */
+header, nav, section, article, footer{
+    padding: 20px; /*espaciado interno*/
+    margin: 10px; /*espaciado externo*/
+    border-radius:10px; /*borde redondeado*/
+    background: white;
+    box-shadow: 0px 4px 6px rgb(0, 0, 0, 0.1); /*sombra suave*/
+}
+
+/*barra de navegacion*/
+nav{
+    display: flex; /*usa flexbox para organizar elementos*/
+    justify-content: center; /*centra los enlaces*/
+gap: 15px; /* espacio entre los enlaces*/
+padding: 10px; /*espaciado interno*/
+background: #444;/*fondo oscuro*/
+border-radius:10px; /* bordes redondeados*/
+}
+/*estilos de los enlaces de navegacion*/
+nav a{
+ text-decoration: none; /*quita el subrayado*/
+ color: white; /*color del texto*/
+ font-weight: bold;/*texto en negritas*/
+ padding:10px 15px; /*espaciado interno*/
+ border-radius: 5px; /*bordes redondeados*/
+ transition: background 0.3s; /*transicion de color al pasar el mouse*/
+
+}
+
+nav a:hover {
+    backround: #ff7e5f; /*cambio de color al pasar el mouse*/
+}
+
+/*estilos a la imagen*/
+img{
+    max-width: 100%; /*evita que la imagen se desborde*/
+    height: auto; /*mantiene la proporcion*/
+    border-radius: 10px; /*bordes redondeados*/
+}
+
+
+/*Estilos al pie de pagina*/
+footer{
+    text-align: center; /*centra el texto*/
+    backround: #222; /*fondo oscuro*/
+    color: white; /*texto en blanco*/
+    padding: 10px; /*espaciado interno*/
+    border-radius 10px; /*bordes redondeados*/
+}
+
+/*mejor visualización en móviles*/
+@media (max-width: 600px) {
+    body {
+        font-size: 16px; /*ajusta el tamaño del texto*/
+        padding: 10px; /*agrega espaciado*/
+        backround: linear-gradient(to bottom, #ff7e5f, #feb47b); /*ajusta el gradiente*/
+
+    }
+
+    nav {
+        flex-direction: column; /*convierte lña barra de navegación en columna*/
+        text-align: center; /*centra los enlaces*/
+        background: #333; /*ajusta el color de fondo*/
+        padding: 15px; /*ajusta el espaciado interno*/
+    }
+
+    nav a{
+        display: block; /*hace que los enlaces sean bloques*/
+        padding: 12px; /*ajusta el espaciado*/
+        margin: 5px 0; /*espaciado entre enlaces*/
+        backgroud: #ff7e5f; /*cambia el color de fondo*/
+        color: white; /*mantiene el color del texto*/
+        border-radius: 8px; /*bordes redondeados*/
+    }
+
+    section{
+        padding: 15px; /*ajusta el espaciado interno*/
+        margin: 5px; /*ajusta el espaciado externo*/
+        text-align: center; /*centra el contenido*/
+    }
+
+    footer{
+        padding: 15px; /*ajusta el espaciado interno*/
+        font-size: 14px; /*ajusta el tamaño del texto*/
+    }
+}
+
